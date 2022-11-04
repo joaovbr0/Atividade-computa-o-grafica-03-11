@@ -1,0 +1,116 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Blackout.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://texto1.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 24
+font_data = ExtResource( 1 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 235, 10.5 )
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 513, 298 )
+current = true
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2( -164, 310 )
+script = ExtResource( 2 )
+
+[node name="texto1" type="Label" parent="Area2D"]
+margin_left = -245.0
+margin_top = -12.0
+margin_right = 234.0
+margin_bottom = 13.0
+theme = SubResource( 2 )
+text = "Atenção!! Últimas unidades do produto [RTX 4090]."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -2, -0.5 )
+shape = SubResource( 3 )
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2( -164, 310 )
+script = ExtResource( 2 )
+
+[node name="texto2" type="Label" parent="Area2D4"]
+margin_left = -960.0
+margin_top = -15.0
+margin_right = -322.0
+margin_bottom = 10.0
+theme = SubResource( 2 )
+text = "Se você antecipar o pedido do próximo mês, levará um desconto de 50%"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2( -2, -0.5 )
+shape = SubResource( 3 )
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2( -164, 310 )
+script = ExtResource( 2 )
+
+[node name="texto3" type="Label" parent="Area2D2"]
+margin_left = -1483.0
+margin_top = -16.0
+margin_right = -1004.0
+margin_bottom = 9.0
+theme = SubResource( 2 )
+text = "Esse desconto é válido apenas até amanhã"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( -2, -0.5 )
+shape = SubResource( 3 )
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2( -164, 310 )
+script = ExtResource( 2 )
+
+[node name="texto4" type="Label" parent="Area2D3"]
+margin_left = -2265.0
+margin_top = -16.0
+margin_right = -1629.0
+margin_bottom = 9.0
+theme = SubResource( 2 )
+text = "Nosso produto é exclusivo e apenas algumas unidades estão disponíveis."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2( -2, -0.5 )
+shape = SubResource( 3 )
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2( -164, 310 )
+script = ExtResource( 2 )
+
+[node name="texto5" type="Label" parent="Area2D5"]
+margin_left = -3512.0
+margin_top = -16.0
+margin_right = -2406.0
+margin_bottom = 9.0
+theme = SubResource( 2 )
+text = "Caso não fique satisfeito com o produto, oferecemos uma garantia de 30 dias para devolução e ressarcimento do valor pago."
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2( -2, -0.5 )
+shape = SubResource( 3 )
+
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2( -164, 310 )
+script = ExtResource( 2 )
+
+[node name="texto6" type="Label" parent="Area2D6"]
+margin_left = -4189.0
+margin_top = -22.0
+margin_right = -3666.0
+margin_bottom = 3.0
+theme = SubResource( 2 )
+text = "Esse produto é ideal para resolver o problema falta de fps "
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2( -2, -0.5 )
+shape = SubResource( 3 )
